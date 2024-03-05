@@ -1,0 +1,65 @@
+.container {
+    background-color: #151515;
+    height: 850px;
+}
+
+.experiencesContainer{
+    padding-left: 60px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .top_title{
+    text-align: center;
+    padding: 3rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: 35px;
+  }
+
+  .box{
+    margin-top: 50px;
+    margin-left: 40px;
+    border: 2px solid grey;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title{
+    color: #03488d;
+    font: 40px;
+    font-weight: bolder ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .date{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .description{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
+
+  .linkButton{
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    background-color:#03488d;
+    border-radius: 1rem;
+    margin: auto auto ;
+  }
+  

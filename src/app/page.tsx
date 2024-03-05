@@ -1,113 +1,28 @@
-import Image from 'next/image'
+import styles from './page.module.css';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    <div className={styles.container}>
+      <h1 className={styles.titre}>Mémoire sur l'éco-conception des sites Internet avec NextJS</h1> <br></br>
+      <p className={styles.memoire}> Dans un monde où la consommation énergétique et les émissions de gaz à effet de serre sont de plus en plus préoccupantes, il est essentiel de repenser la façon dont nous concevons et développons les sites Internet. <br></br>
+       L'éco-conception des sites web vise à réduire leur impact environnemental tout en maintenant des performances optimales et une expérience utilisateur de qualité.<br></br><br></br>
+       Nous verrons en première partie pourquoi utiliser NextJS pour concevoir et réaliser vos sites web de manière écologique. Nous aborderons ensuite en quoi mon portfolio est éco-conçu.<br></br>
+       Next.js est un framework de développement web basé sur React, conçu pour faciliter la création de sites web modernes et performants. Il offre la possiblité de réaliser des sites éco-conçus grâce à plusieurs concepts :<br></br>
+       Tout d'abord, NextJS permet de générer des pages HTML statiques à la construction du site, réduisant ainsi la charge serveur et la consommation énergétique associée aux requêtes dynamiques.<br></br>
+       Ensuite, NextJS génère des pages côté serveur plutôt que côté client, ce qui réduit le temps de chargement et améliore l'expérience pour les utilisateurs.<br></br>
+       De plus, NextJS propose diverses options pour optimiser les ressources comme le regroupement et la minification des fichiers CSS et JavaScript, contribuant ainsi à réduire la taille totale des fichiers à télécharger.<br></br>
+       Parrallèlement, une comparaison avec d'autres solutions de développement web comme Angular prouve les avantages spécifiques de Next.js en termes d'éco-conception et de performances car ce
+       genre de framework n'inclue pas les conceps cités plus haut.
+       <br></br> <br></br>
+       Si on s'intéresse au site web portfolio proposé, des techniques spécifiques ont été mises en œuvre lors de la conception. 
+       Il a été choisi de ne pas diffuser de média inutilement comme des vidéos ou présentations des sites que j'ai créé, étant donné que ceux-ci sont disponibles sur GitHub.<br></br>
+       De plus, j'ai décidé de créer des composants réutilisables, comme pour les cartes de compétences ou les cadres d'expériences. En effet, ceux ci ont été réutilisés pour chaque compétences /
+       expérience différente, ce qui permet d'optimiser le code, ce qui contribue à une meilleure efficacité énergétique lors du chargement du site.<br></br>
+       Troisièmement, la technologique du rendu statique a bel et bien été utilisée étant donné qu'aucune page n'est générée à la volée lorsqu'un utilisateur accède à la page. Cela réduit la consommation de
+       ressources serveur et la quantité de données tranférées sur le réseau, contribuant ainsi à une empreinte environnementale réduite.<br></br><br></br>
+       En conclusion, l'utilisation de Next.js pour concevoir des sites Internet éco-conçus offre une approche prometteuse pour réduire l'empreinte environnementale du web. <br></br> Les fonctionnalités telles
+       que le pré-rendu statique et l'optimisation des ressources permettent d'améliorer les performances tout en minimisant la consommation d'énergie. <br></br> Cette approche reflète un engagement envers un
+       développement web plus durable et respectueux de l'environnement, offrant des avantages tant pour les utilisateurs que pour la planète.</p>
+    </div>
   )
 }
